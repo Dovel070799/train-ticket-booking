@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DocumenTTTTTTTTT</title>
+    <title> Бронирование билетов </title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
+    <div class="container">
+    <h2> Тут покупают дешевые железнодородные билеты. </h2>
+
+        <form id="booking-form">
+
+            <div class="input-group">
+                <label for="from">Откуда?</label>
+                <input type="text" id="from" placeholder="Город отправления">
+            </div>
+
+            <div class="input-group">
+                <label for="where">Куда?</label>
+                <input type="text" id="where" placeholder="Город прибытия">
+            </div>
+            
+            <div class="input-group">
+                <label for="when">Дата поездки</label>
+                <input type="date" id="when">
+            </div>
     
-</body>
-</html>
+            <button type="submit" class="search-btn">Найти билеты</button>
+            <button type="button" id="reset" class="reset-btn">Сбросить</button>
+    
+        </form>
+    
+        <div id="result"></div>
+    
+       <script src = "script.js"></script> 
+    </body>
+    </html>
+    
+    <!-- Что можно попробовать сделать:
+    
+    1. Добавить валидацию дат, запретить ввод неправильных вариантов.
+    2. Анимацию результата покупки билетов.
+    3. Сделать неактивной серую кнопку (если нету данных для сброса).
+    4. Сохранение данных (чтобы не пропадали при обновлении страницы).
+    
+    -->
+    
